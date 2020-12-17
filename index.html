@@ -256,6 +256,74 @@
         <div class="card-menu-section card-menu-section-4 inactive" data-section="4">
           <div class="card-menu-menu-btn"></div>
           <h2 class="card-menu-section-heading">Curriculum Vitae / Contact</h2>
+          <div class="form">
+            <div class="form-title"><h3>Me contacter</h3></div>
+            <div class="scene">
+                <div class="cube">
+                    <nav class="steps">
+                        <div class="dot step_2 done"></div>
+                        <div class="dot step_3"></div>
+                        <div class="dot step_4"></div>
+                        <div class="dot step_5"></div>
+                        <div class="dot step_6"></div>
+                    </nav>
+        
+                    <div class="cube__face cube__face--front" id="step__2">
+                        <div class="container">
+                            <input type="text" placeholder="Votre nom">
+                            <div class="btn">
+                                <span data-step="2">Continue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--bottom" id="step__3">
+                        <div class="container">
+                            <input type="email" placeholder="Votre adresse email">
+                            <div class="btn">
+                                <span data-step="3">Continue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube__face" id="step__4">
+                        <div class="container">
+                            <input type="text" placeholder="Votre message">
+                            <div class="btn">
+                                <span data-step="4">Continue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube__face" id="step__5">
+                        <div class="container">
+                            <select name="fav_color" id="fav_color">
+                                <option disabled selected>Type de contact</option>
+                                <option value="professionnel">Professionnel</option>
+                                <option value="demarchage">Démarchage commercial :(</option>
+                                <option value="embauche">Embauche</option>
+                                <option value="fun">Pour le fun</option>
+                            </select>
+                            <div class="btn">
+                                <span data-step="5">Continue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube__face" id="step__6">
+                        <div class="container">
+                            <input type="text" class="label" placeholder="Vous confirmez ?" disabled>
+                            <div class="right">
+                                <label for="">Non</label>
+                                <div class="checkbox">
+                                    <div class="circle"></div>
+                                </div>
+                                <label for="">Oui</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-form">
+                <div class="content-welcome">C'est envoyé !</div>
+            </div>
+        </div>
         </div>
       </div>
 
@@ -265,6 +333,7 @@
       <script src="assets/js/skills.js"></script>
       <script src="assets/js/works.js"></script>
       <script src="assets/js/presentation.js"></script>
+      <script src="assets/js/form.js"></script>
       <script src="assets/js/app.js"></script>
 </body>
 </html>

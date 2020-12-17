@@ -30,7 +30,7 @@ class Works {
         this.css = $('fa-css3');
         this.js = $('.fa-js-square');
         this.php = $('.fa-php');
-        this.symfony = $('.fa-symfony');
+        this.symfony = $('.fab fa-symfony');
         this.database = $('.fa-database');
         this.wordpress = $('.fa-wordpress');
 
@@ -60,6 +60,14 @@ class Works {
         this.code.show();
         this.code.attr("href", "https://github.com/eferdeve/Webagency");
         this.card.css('box-shadow', 'inset 0px 0px 25px #6e6c6d');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.hide();
+        this.php.hide();
+        this.symfony.hide();
+        this.database.hide();
+        this.wordpress.hide();
 
         console.log(mySwiper.activeIndex);
     }
@@ -72,6 +80,15 @@ class Works {
         this.url.attr("href", "https://noumea-touring.com/");
         this.code.hide();
         this.card.css('box-shadow', 'inset 0px 0px 25px rgb(22 126 211)');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.hide();
+        this.php.hide();
+        this.symfony.hide();
+        this.database.hide();
+        this.wordpress.show();
+
         console.log(mySwiper.realIndex);
     }
 
@@ -84,6 +101,15 @@ class Works {
         this.code.show();
         this.code.attr("href", "https://github.com/eferdeve/Bikemap");
         this.card.css('box-shadow', 'inset 0px 0px 25px #6f584d');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.show();
+        this.php.hide();
+        this.symfony.hide();
+        this.database.hide();
+        this.wordpress.hide();
+
         console.log(mySwiper.realIndex);
     }
 
@@ -96,6 +122,15 @@ class Works {
         this.code.show();
         this.code.attr("href", "https://github.com/eferdeve/projet4OC");
         this.card.css('box-shadow', 'inset 0px 0px 25px #d3e6ec');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.show();
+        this.php.show();
+        this.symfony.hide();
+        this.database.show();
+        this.wordpress.hide();
+
     }
 
     youjudgeItem() {
@@ -107,6 +142,15 @@ class Works {
         this.code.show();
         this.code.attr("href", "https://github.com/eferdeve/youjudge");
         this.card.css('box-shadow', 'inset 0px 0px 25px #54678a');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.show();
+        this.php.show();
+        this.symfony.show();
+        this.database.show();
+        this.wordpress.hide();
+
     }
 
     margotdemirItem() {
@@ -117,6 +161,15 @@ class Works {
         this.url.attr("href", "http://www.margotdemirdjian.com/");
         this.code.hide();
         this.card.css('box-shadow', 'inset 0px 0px 25px #a4817d');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.show();
+        this.php.hide();
+        this.symfony.hide();
+        this.database.hide();
+        this.wordpress.hide();
+
     }
 
     tabacItem() {
@@ -126,6 +179,15 @@ class Works {
         this.url.hide();
         this.code.hide();
         this.card.css('box-shadow', 'inset 0px 0px 25px #656668');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.hide();
+        this.php.hide();
+        this.symfony.hide();
+        this.database.hide();
+        this.wordpress.show();
+
     }
 
     todolistItem() {
@@ -137,6 +199,15 @@ class Works {
         this.code.show();
         this.code.attr("href", "https://github.com/eferdeve/Todolist");
         this.card.css('box-shadow', 'inset 0px 0px 25px #59b7db');
+        // icons
+        this.html.show();
+        this.css.show();
+        this.js.show();
+        this.php.hide();
+        this.symfony.hide();
+        this.database.hide();
+        this.wordpress.hide();
+
     }
 
     animate() {

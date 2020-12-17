@@ -38,7 +38,7 @@ a {
 
 /* CV + Contact */
 .card-menu-section-4 {
-     background-image: url(../images/backgrounds/cv.jpg); 
+    background-image: linear-gradient(to left bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
      background-size: cover;
 }
 
@@ -1377,6 +1377,8 @@ a {
     top: 0;
     left: 13%;
     animation-delay: 1s;
+    display: flex;
+    flex-direction: column;
 }
 @keyframes stacksMove {
     from {
@@ -1395,10 +1397,320 @@ a {
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
-
 /* Section works end */
-  
+/* Form start */
+.form {
+	font-family: helvetica;
+	height: 80vh;
+	width: 50vw;
+	background-image: linear-gradient(to left bottom, #0066ff, #00a1ff, #00c6eb, #00e087, #a8eb12);
+	display: flex;
+	float: right;
+	box-shadow: 0px 0px 10px #000000;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 25vw;
+    justify-content: center;
+}
+
+.scene {
+	width: 650px;
+	height: 70px;
+	perspective: 400px;
+	margin: auto;
+	position: relative;
+	transition: opacity 0.5s;
+	z-index: 2;
+}
+
+.scene.end {
+	opacity: 0;
+	transition-delay: 0.25s;
+	transition: opacity 0.5s;
+	z-index: 0;
+}
+
+.welcome-form {
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	display: flex;
+	transition-delay: 0.25s;
+	transition: opacity 0.5s;
+}
+
+.welcome-form.show {
+    opacity: 1;
+}
+
+.welcome-form .content-welcome {
+	font-size: 2.5rem;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+}
+
+.cube {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: translateZ(-100px);
+}
+
+.steps {
+	position: absolute;
+	top: 140%;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.steps .dot {
+	width: 15px;
+	height: 15px;
+	background: rgba(0, 0, 0, 0.75);
+	border-radius: 100%;
+	margin: 0 10px;
+	transition: 0.25s;
+}
+
+.steps .dot.done {
+	background: rgba(255, 255, 255, 0.75);
+}
+
+.cube__face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 40px;
+	font-weight: bold;
+	transition: transform 0.5s;
+	opacity: 0;
+	background: #ffffff;
+	border-radius: 5px;
+}
+
+.cube__face--front {
+	transform: rotateY(0deg) translateZ(35px);
+	opacity: 1;
+	box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+.cube__face--top {
+	transform: rotateX(90deg) translateZ(35px);
+	opacity: 1;
+}
+
+.cube__face--top .container {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.cube__face--bottom {
+	transform: rotateX(-90deg) translateZ(35px);
+}
+
+.hidden {
+	display: none;
+}
+
+input:not([type="radio"]),
+select {
+    position: absolute;
+    top: -100px;
+    right: 10%;
+	display: block;
+	margin: 0;
+	width: 80%;
+	border: none;
+	background-color: transparent;
+	color: #202020;
+	text-overflow: ellipsis;
+	font-weight: normal;
+	font-size: 1.5rem;
+	height: 100%;
+}
+
+input:focus,
+select:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: #a0a0a0;
+}
+
+.cube__face .container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	padding-right: 185px;
+	padding-left: 50px;
+}
+
+div.btn.show {
+	opacity: 1 !important;
+}
+
+div.btn.show span {
+	display: block !important;
+}
+
+div.btn {
+	position: absolute;
+	right: 15%;
+	top: -100px;
+	height: 100%;
+	display: flex;
+	transition: opacity 0.25s ease;
+	opacity: 0;
+}
+
+div.btn span {
+	color: #006aff;
+	font-size: 1.25rem;
+	padding: 10px 25px;
+	border: 3px solid #04e081;
+	border-radius: 40px;
+	display: inline-block;
+	margin: auto;
+	cursor: pointer;
+	transition: all 0.25s;
+	display: none;
+}
+
+div.btn span:hover {
+	color: #ffffff !important;
+	background: #e90052;
+}
+
+input.label::placeholder {
+	color: #202020 !important;
+}
+
+#step__1 .container,
+#step__5 .container {
+	display: flex;
+	padding-right: 10px;
+}
+
+.radio {
+	display: flex;
+	align-items: center;
+}
+
+.right {
+	display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    top: -80px;
+}
+
+.right label {
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+.checkbox {
+	padding: 4px;
+	border: 3px solid #00d1c3;
+	display: inline-block;
+	width: 64px;
+	border-radius: 40px;
+	margin: auto 8px;
+}
+
+.checkbox .circle {
+	height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 35%;
+    top: 0;
+	border-radius: 100%;
+	background: #0070ff;
+	display: block;
+	transform: translateX(0px);
+	transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.checkbox.checked {
+	background: #e90052;
+}
+
+.checkbox.checked .circle {
+	transform: translateX(25px);
+	background: white !important;
+}
+
+.checkbox.blue {
+	border-color: #04f5ff;
+}
+
+.checkbox.blue .circle {
+	background: #04f5ff;
+}
+
+.checkbox.checked.blue {
+	background: #04f5ff;
+}
+
+.checkbox.yellow {
+	border-color: #ebff00;
+}
+
+.checkbox.yellow .circle {
+	background: #ebff00;
+}
+
+.checkbox.checked.yellow {
+	background: #ebff00;
+}
+
+.checkbox.purple {
+	border-color: #e90052;
+}
+
+.checkbox.purple .circle {
+	background: #e90052;
+}
+
+.checkbox.checked.purple {
+	background: #e90052;
+}
+
+.checkbox.green {
+	border-color: #00ff85;
+}
+
+.checkbox.green .circle {
+	background: #00ff85;
+}
+
+.checkbox.checked.green {
+	background: #00ff85;
+}
+
+.checkbox.violet {
+	border-color: #38003c;
+}
+
+.checkbox.violet .circle {
+	background: #38003c;
+}
+
+.checkbox.checked.violet {
+	background: #38003c;
+}
+
+.form-title {
+	position: absolute;
+}
+/* Form end */ 
 
 
 
