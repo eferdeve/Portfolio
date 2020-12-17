@@ -1401,9 +1401,9 @@ a {
 /* Form start */
 .form {
 	font-family: helvetica;
-	height: 80vh;
+	height: 20vh;
 	width: 50vw;
-	background-image: linear-gradient(to left bottom, #0066ff, #00a1ff, #00c6eb, #00e087, #a8eb12);
+    background-image: radial-gradient(circle, #3042a2, #0075d1, #00a5ed, #00d3f9, #00fffa);
 	display: flex;
 	float: right;
 	box-shadow: 0px 0px 10px #000000;
@@ -1470,6 +1470,7 @@ a {
 }
 
 .steps .dot {
+
 	width: 15px;
 	height: 15px;
 	background: rgba(0, 0, 0, 0.75);

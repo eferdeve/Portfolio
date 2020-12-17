@@ -52,5 +52,6 @@ var mySwiper = new Swiper('.swiper-container', {
 let home = new Presentation();
 let works = new Works();
 let skills = new Skills();
+let contactCv = new Contact();
 
 
