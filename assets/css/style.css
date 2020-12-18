@@ -38,7 +38,7 @@ a {
 
 /* CV + Contact */
 .card-menu-section-4 {
-    background-image: linear-gradient(to left bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    background-image: url(../images/backgrounds/cv.jpg);
      background-size: cover;
 }
 
@@ -512,6 +512,24 @@ a {
 }
 
 /* Section stacks start*/
+.bg-stacks {
+    position: absolute;
+    width: 100vw;
+    height: 350px;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.1;
+}
+.bg-stacks img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.bg-stacks img{
+    width: 100%;
+    height: 100%;
+}
 .stacks {
     position: relative;
     width: 100%;
@@ -1402,16 +1420,40 @@ a {
 .form {
 	font-family: helvetica;
 	height: 20vh;
-	width: 50vw;
-    background-image: radial-gradient(circle, #3042a2, #0075d1, #00a5ed, #00d3f9, #00fffa);
+    width: 50vw;
+    background: #64a1b9;
 	display: flex;
 	float: right;
-	box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0 0 20px 0px black;
     border-radius: 20px;
     position: absolute;
     top: 10%;
     left: 25vw;
     justify-content: center;
+    overflow: hidden;
+    transition: .2s;
+    z-index: 10;
+}
+
+.form::before {
+    content: '';
+    width: 150%;
+    height: 300%;
+    position: absolute;
+    left: -360px;
+    background-color: #000000;
+    opacity: 0.6;
+    transform: rotate(45deg);
+    transition: .2s;
+}
+
+.form:hover::before {
+    transform: rotate(45deg) translateY(-100%);
+}
+
+.form:hover {
+    box-shadow: 0px 0px 20px #fff;
+    transform: scale(1.05);
 }
 
 .scene {
@@ -1523,10 +1565,10 @@ input:not([type="radio"]),
 select {
     position: absolute;
     top: -100px;
-    right: 10%;
+    left: 10%;
 	display: block;
 	margin: 0;
-	width: 80%;
+	width: 50%;
 	border: none;
 	background-color: transparent;
 	color: #202020;
@@ -1615,6 +1657,32 @@ input.label::placeholder {
 .right label {
 	font-size: 1.5rem;
 	font-weight: normal;
+}
+
+#display{
+    display: none;
+    color: #fff;
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    background: #00000024;
+    right: 25%;
+    top: 31%;
+    border-radius: 20px;
+    transform: translateY(20deg);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+    overflow-wrap: break-word;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 2.5em;
+    opacity: 0.7;
+    color: #565656;
 }
 
 .checkbox {
@@ -1710,6 +1778,43 @@ input.label::placeholder {
 
 .form-title {
 	position: absolute;
+}
+
+.bg-circle {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 17%;
+    left: 0;
+    border: dotted 55px #fff;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: circlebg 60s linear infinite;
+}
+@keyframes circlebg {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -2;
+    background: #404052;
+    opacity: 0.9;
+}
+
+.bg-filter img {
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    width: 153%;
+    height: 100%;
 }
 /* Form end */ 
 

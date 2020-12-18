@@ -65,7 +65,7 @@ for (let i = 0; i < inputs.length; i++) {
 			}
 		}
 		if (this.getAttribute("type") == "email") {
-			if (this.value.length > 2 && this.value.includes("@")) {
+			if (this.value.length > 2 && this.value.includes("@") && this.value.includes(".")) {
 				this.closest(".container")
 					.querySelector(".btn")
 					.classList.add("show");
@@ -88,3 +88,8 @@ document.querySelector("select").addEventListener("change", function() {
 		.querySelector(".btn")
 		.classList.add("show");
 });
+
+
+    $('#msg').keyup(function () {
+        $('#display').text($(this).val());
+      });
