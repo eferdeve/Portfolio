@@ -22,7 +22,7 @@ class Works {
         this.menu = $('.card-menu-menu-btn');
         this.card = $('.thecard');
         this.stackBox = $('.stacks-used');
-        this.slideActive = $('.swiper-slide-active');
+        this.slideActive = document.querySelector('.swiper-slide-active');
         this.icon = document.createElement('i')
 
         //Icons
@@ -69,7 +69,7 @@ class Works {
         this.database.hide();
         this.wordpress.hide();
 
-        console.log(mySwiper.activeIndex);
+        console.log(mySwiper.realIndex);
     }
 
     noumeaItem() {
