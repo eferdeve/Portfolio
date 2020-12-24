@@ -1,6 +1,7 @@
 class Contact {
     constructor() {
         //Vars
+        this.eye = $('.fa-eye');
 
 
         //Events
@@ -11,11 +12,13 @@ class Contact {
     }
 //Methods
     displayEye() {
-        $('#display').show()
+        $('#display').show();
+        this.eye.show();
     }
 
     hideEye() {
         $('#display').hide();
+        this.eye.hide();
     }
 
 }
