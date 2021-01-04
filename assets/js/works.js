@@ -26,9 +26,6 @@ class Works {
         this.webagency.click(this.webagencyItem.bind(this));
         this.noumea.click(this.noumeaItem.bind(this));
 
-        //Animations entrée
-        this.animate();
-        this.animateSquare();
         // Reset
     }
     // Methods
@@ -42,21 +39,6 @@ class Works {
         this.box.not(this.noumea).toggle();
         this.content.toggle();
         this.noumea.toggleClass("activeB");
-    }
-
-    animate() {
-        $('.fixed-left-bottom-title').show();
-        $('.fixed-left-bottom-title').css('animation', 'typebar .5s 16');
-        $('.fixed-left-bottom-title h2').css('animation', 'typeTitleWork 4s 2 steps(12)');
-    }
-
-    animateSquare() {
-        $('.bg-cube').fadeIn(3000)
-        $('.bg-cube').css('animation', 'bg-cube 20s linear infinite');
-        $('.bg-cube2').fadeIn(3000);
-        $('.bg-cube2').css('animation', 'bg-cube 15s linear infinite');
-        $('.bg-cube3').fadeIn(3000);
-        $('.bg-cube3').css('animation', 'bg-cube 10s linear infinite');
     }
 
 }
