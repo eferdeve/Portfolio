@@ -76,7 +76,7 @@ class Works {
         this.box.not(this.webagency).toggle();
         this.content.toggle();
         this.webagency.toggleClass("activeB");
-        this.title.html('Webgagency');
+        this.title.html('Webagency');
         this.text.html(
             "Premier projet de la formation développeur web d'Openclassrooms, ce projet consiste en l'intégration d'une maquette graphique en HTML CSS pure sans framework en respectant les bons usages de la sémantique HTML."
             );
