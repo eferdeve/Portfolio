@@ -25,24 +25,29 @@ li {
 /* Template navigation */
 /* Home */
 .card-menu-section-1 {
-     background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url(../images/backgrounds/home.jpg); 
+     background-image: linear-gradient(to top, rgb(0 0 0), rgb(68 93 144 / 54%)), url(../images/backgrounds/home.jpg);
      background-size: cover;
 }
 /* Stacks */
 .card-menu-section-2 {
-    background-image: linear-gradient(to bottom, #4da0c7, #175582, #102d40, #071d2b, #000000);
+    background-image: linear-gradient(to top, rgb(5 7 14), rgb(8 12 19 / 84%), rgb(1 25 42)), url(../images/backgrounds/skills.jpg);
      background-size: cover;
 }
 
 /* Works */
 .card-menu-section-3 {
-    background-image: linear-gradient(to top, #01192a, #0c2c44, #0e4a73, #318bca, #62bdfb);
+    background-image: linear-gradient(to top, #585973a3, rgb(102 105 125 / 43%), rgb(255 255 255 / 72%)), url(../images/backgrounds/works.jpg);
     background-size: cover;
+    transition: background 0.5s linear;
+}
+.dark-mode {
+    background-image: linear-gradient(to top, #000000, rgb(102 105 125 / 71%), rgb(0 0 0 / 82%)), url(../images/backgrounds/works.jpg);
+    transition: background 0.5s linear;
 }
 
 /* CV + Contact */
 .card-menu-section-4 {
-    background-image: url(../images/backgrounds/cv.jpg);
+    background-image: linear-gradient(to top, #585973a3, rgb(102 105 125 / 43%), rgb(255 255 255 / 72%)), url(../images/backgrounds/cv.jpg);
      background-size: cover;
 }
 
@@ -461,7 +466,7 @@ li {
 
 .home-text {
     position: absolute;
-    top: 3%;
+    top: 0;
     display: none;
     color: #fff;
     margin-bottom: 10%;
@@ -1263,6 +1268,7 @@ li {
     text-align: center;
     padding: 50px;
     border: solid 1px #fff;
+    background: #000000;
     animation: work-links .5s linear forwards;
 }
 @keyframes work-links {
@@ -1291,6 +1297,28 @@ li {
     text-align: center;
     padding: 20px;
     animation: work-skills .5s linear forwards;
+
+    overflow: hidden;
+    padding: 20px;
+    color: #fff;
+    border: 1px solid rgb(107, 106, 118);
+    transition: .2s;
+    background: #000000;
+    border-radius: 20px;
+    font-style: italic;
+    background: #000;
+}
+
+.work-skills::before {
+    content: '';
+    width: 150%;
+    height: 100%;
+    background-color: #1a84c2;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform: rotate(45deg);
 }
 @keyframes work-skills {
     from {
@@ -1300,6 +1328,10 @@ li {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.work-skills p {
+    font-style: italic;
 }
 
 .annexe-blocks {
@@ -1684,7 +1716,7 @@ input.label::placeholder {
     position: absolute;
     top: 17%;
     left: 0;
-    border: dotted 55px #fff;
+    border: dotted 55px #233e48;
     border-radius: 50%;
     opacity: 0.1;
     animation: circlebg 60s linear infinite;
