@@ -35,19 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-//Swiperjs initialisation
-var mySwiper = new Swiper('.swiper-container', {
-    effect: 'flip',
-    grabCursor: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
 //Appel des objets
 let home = new Presentation();
 let works = new Works();

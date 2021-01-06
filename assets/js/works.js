@@ -5,6 +5,8 @@ class Works {
         this.box = $('.box');
         this.global = $('.global-container');
         this.content = $('.work-content');
+        this.links = $('.work-links');
+        this.skills = $('.work-skills');
         this.title = $('.work-title');
         this.text = $('.work-text');
         this.webagency = $('.webagency');
@@ -36,6 +38,7 @@ class Works {
 
         //Animation d'entrée
         $('.card-menu-section-3').click(this.InAnimateBox.bind(this));
+        this.box.click(this.animateSkillLinks.bind(this));
 
         // Reset
     }
@@ -70,6 +73,11 @@ class Works {
             'animation' : 'boxin 0.8s backwards',
             'animation-delay' : '1.4s'
         });
+    }
+
+    animateSkillLinks() {
+        this.links.toggle();
+        this.skills.toggle();
     }
 
     webagencyItem() {
