@@ -49,6 +49,7 @@ class Skills {
     // Methods
     animeLine() {
         $('.welcome').hide();
+        $('.blabla-stacks').hide();
         $('.skill-line').show();
         this.p1.css({
             "animation": "p1 1s forwards",
@@ -258,6 +259,14 @@ class Skills {
 
     reset() {
         $('.skill-container').hide();
+        $('.skill-line').hide();
+        this.htmlcsslogo.css("transform", "translate(0, 0)");
+        this.jsLogo.css('transform', 'translate(0, 0)');
+        this.phpLogo.css("transform", "translate(0, 0)");
+        this.toolsLogo.css("transform", "translate(0, 0)");
+        this.cmsLogo.css("transform", "translate(0, 0)");
+        this.marketingLogo.css("transform", "translate(0, 0)");
+        this.experiencelogo.css("transform", "translate(0, 0)");
     }
 
 }

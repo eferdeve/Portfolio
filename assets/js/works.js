@@ -95,7 +95,9 @@ class Works {
         this.text.html(
             "Premier projet de la formation développeur web d'Openclassrooms, ce projet consiste en l'intégration d'une maquette graphique en HTML CSS pure sans framework en respectant les bons usages de la sémantique HTML."
             );
+        this.link.show();
         this.link.attr("href", "http://projetocferres.com/");
+        $('<div class="fab fa-html5"></div>').appendTo(this.skills);
     }
 
     noumeaItem() {
@@ -106,7 +108,8 @@ class Works {
         this.text.html(
             "Deuxième projet Openclassrooms. Création d'un site fonctionnel pour le compte de l'agence de tourisme de la ville de Nouméa qui mets en avant les activités touristiques principales et les évènements de la ville organisés. Ce site est réalisé sous Wordpress et l'objectif visé est de permettre le référencement de celui-ci en respectant les pratiques de bases du SEO et la gestion d'un calendrier des évènement."
             );
-            this.link.attr("href", "https://noumea-touring.com/");
+        this.link.show();
+        this.link.attr("href", "https://noumea-touring.com/");
     }
 
     bikemapItem() {
@@ -117,7 +120,8 @@ class Works {
         this.text.html(
             "Troisième projet Openclassrooms. Création d'une site en utilisant principalement Javascript orienté objet pour la mise en place d'un système de réservation de vélo dans la ville de Lyon en utilisant une API dédié, permettant ainsi aux utilisateurs de réserver un  vélo rapidement en ligne. L'objectif est Front-end et d'offrir une navigation ergonomique et intuitive."
             );
-            this.link.attr("href", "https://noumea-touring.com/");
+        this.link.show();
+        this.link.attr("href", "http://bikemap.projetocferres.com/");
     }
 
     jeanfItem() {
@@ -128,6 +132,7 @@ class Works {
         this.text.html(
             "Quatrième projet Openclassrooms. Création d'un Blog en ligne pour un écrivain dôté d'un espace d'administration sur mesure afin que le client puisse gérer le contenu de son site (CRUD). Réalisé en HTML CSS Javascript et PHP orienté objet en architecture MVC."
             );
+        this.link.show();
         this.link.attr("href", "http://jeanforteroche.projetocferres.com/");
     }
 
@@ -139,7 +144,8 @@ class Works {
         this.text.html(
             "Cinquième projet Openclassrooms. C'est un projet libre. J'ai choisis de me consacrer aux jeux vidéos et aux streamers de la plateforme Twitch. Ce site répertorie selon un jugement personnel les meilleurs streamers de Twitch et les jeux en vogue sur la plateforme (les plus regardés). Le site fût réalisé sous Symfony 4 et 5 et utilisant l'api de Twitch. Il est également dôté d'un espace administrateur sur mesure."
             );
-            this.link.attr("href", "http://youjudge.projetocferres.com/");
+        this.link.show();
+        this.link.attr("href", "http://youjudge.projetocferres.com/");
     }
 
     margotdemirItem() {
@@ -149,6 +155,7 @@ class Works {
         this.title.html("Vitrine psychologue");
         this.text.html("Site vitrine pour le compte d'une psychologue travaillant à son compte réalisé en HTML CSS Javascript objet"
         );
+        this.link.show();
         this.link.attr("href", "http://margotdemirdjian.com/");
     }
 
@@ -160,6 +167,7 @@ class Works {
         this.text.html(
             "Un petit projet fait en ReactJs, une liste de choses à faire avec un tri possible. Application React de 3 composants fonctionnels."
             );
+        this.link.show();
         this.link.attr("href", "http://todolist.enzoferres.com/");
     }
 
