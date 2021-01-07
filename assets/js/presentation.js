@@ -7,12 +7,17 @@ class Presentation {
         this.homeText = $('.home-text');
         this.content = $('.content');
         this.menu = $('.card-menu-menu-btn');
+        this.links = $('.pro-links');
+        this.linkedin = $('.linkedin');
+        this.github = $('.github');
 
         //Events
         this.content.click(this.textReplace.bind(this));
         this.homeText.click(this.rollBack.bind(this));
         this.homeText.click(this.titleShow.bind(this));
         this.menu.click(this.rollBack.bind(this));
+
+        this.links.click(this.linkBoxes.bind(this));
     }
 
     textReplace() {
@@ -38,6 +43,12 @@ class Presentation {
         $('.content.reveal .sub-heading span').css('animation', 'subHeadIn 1.5s ease  forwards');
         $('.content.reveal .heading span').css('animation-delay', '2.2s');
         $('.content.reveal .sub-heading span').css('animation-delay', '2s');
+    }
+
+    linkBoxes() {
+        this.links.toggleClass("fat");
+        this.linkedin.toggleClass("lined-linkedin");
+        this.github.toggleClass("lined-github")
     }
 
 }

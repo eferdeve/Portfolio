@@ -14,6 +14,9 @@ h1, h2, h3, p, a{
     font-family: 'Source Code Pro', monospace;
     color: #fff;
 }
+h2 {
+    text-transform: uppercase;
+}
 a {
     text-decoration: none;
 }
@@ -167,31 +170,34 @@ li {
 .card-menu-section-2 .card-menu-section-heading, .card-menu-section-2 .card-menu-menu-btn:before {
     color: #FFE26F; 
     position: absolute;
-    top: 3%;
-    left: 4%;
+    font-size: 1.2em;
+    top: 2%;
+    left: 5%;
 }
 
 .card-menu__section-3 .card-menu-section-heading, .card-menu-section-3 .card-menu-menu-btn:before {
     color: #AD4A5D; 
     position: absolute;
-    top: 3%;
-    left: 4%;
+    font-size: 1.2em;
+    top: 2%;
+    left: 5%;
 }
 
 .card-menu-section-4 .card-menu-section-heading, .card-menu-section-4 .card-menu-menu-btn:before {
     color: #AD4A5D; 
     position: absolute;
-    top: 3%;
-    left: 4%;
+    font-size: 1.2em;
+    top: 2%;
+    left: 5%;
 }
 
 .card-menu-section-heading {
     position: absolute;
     color: #000106;
-    top: 3%;
-    left: 4%;
+    top: 2%;
+    left: 5%;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1.2em;
     -webkit-transition: -webkit-transform 0.4s;
     transition: -webkit-transform 0.4s;
     transition: transform 0.4s;
@@ -518,6 +524,83 @@ li {
 
 .home-text p {
     margin: 10px;
+}
+
+.pro-links {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #2c4461;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    transition: .2s;
+    z-index: 1;
+    transition-duration: 1.3s;
+}
+
+.pro-links.fat {
+    transform: scale(1.8);
+    border-radius: 50%;
+    background: transparent;
+}
+
+.pro-links img {
+    position: absolute;
+    top: 7%;
+    left: -15%;
+    width: 130%;
+    height: 80%;
+}
+
+.linkedin {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    transform: translateX(100%);
+    transition: .8s;
+    transition-delay: .2s;
+    opacity: 0;
+}
+
+.linkedin.lined-linkedin {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.linkedin img {
+    width: 80px;
+    height: 100%;
+}
+
+.github {
+    position: absolute;
+    width: 80px;
+    height: 200px;
+    border-radius: 20px;
+    right: 20px;
+    bottom: 100px;
+    transform: translateY(100%);
+    transition: .8s;
+    transition-delay: .2s;
+    opacity: 0;
+}
+
+.github.lined-github {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.github img {
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* Section stacks start*/
@@ -1750,7 +1833,7 @@ input.label::placeholder {
 .cv {
     position: absolute;
     bottom: 10%;
-    left: 42%;
+    left: 40%;
     width: 300px;
     height: 300px;
     background-color: #629db4b8;
