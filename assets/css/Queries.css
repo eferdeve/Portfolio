@@ -50,6 +50,7 @@
 
     .home-text {
         top: 3%;
+        padding: 20px;
     }
     .square {
         width: 300px;
@@ -71,6 +72,86 @@
     /* Section présentation end */
 
     /* Section Compétences start */
+    .stacks {
+        overflow: scroll;
+    }
+
+    .blabla-stacks {
+        bottom: 65%;
+        left: 5%;
+    }
+
+    .welcome {
+        font-size: 13px;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .card {
+        height: 100px;
+    }
+
+    .title {
+        font-size: 14px;
+        left: 5%;
+    }
+
+    svg {
+        display: none;
+    }
+    .marketing-logo, .wp-logo, .tools-logo, .php-logo, .js-logo, .htmlcss-logo, .experience-logo , .bar{
+        display: none;
+    }
+
+    .skill-line {
+        top: 23%;
+        height: 20px;
+    }
+
+    .skill-p1 {
+        width: 100%;
+        height: 15%;
+        top: 35%;
+    }
+    .skill-p2 {
+        width: 100%;
+        height: 15%;
+        top: 50%;
+        left: 0;
+    }
+    .skill-p3 {
+        width: 100%;
+        height: 15%;
+        top: 65%;
+        left: 0;
+    }
+    .skill-p4 {
+        width: 100%;
+        height: 15%;
+        top: 80%;
+        left: 0;
+    }
+    .skill-p5 {
+        width: 100%;
+        height: 15%;
+        top: 95%;
+        left: 0;
+    }
+
+    .block-illustration {
+        z-index: -1;
+        width: 80px;
+    }
+
+    .ocr-link {
+        bottom: 0;
+        right: 0;
+    }
+
+    .windows-logo, .apple-logo {
+        width: 50px;
+    }
     /* Section Compétences end */
 
     /* Section Travaux start */
@@ -122,5 +203,53 @@
         position: inherit;
     }
     /* Section Travaux end */
+    /* Section Contact Cv start */
+    .form {
+        width: 100vw;
+        left: 0;
+        border: solid 1px grey;
+    }
+
+    .form-title {
+        font-size: 1.1em;
+    }
+
+    input:not([type="radio"]), select {
+        left: 35%;
+    }
+
+    input:not([type="radio"]), select {
+        font-size: 20px;
+    }
+
+    div.btn {
+        right: -25%;
+    }
+
+    .right {
+        right: -20%
+    }
+
+    .welcome-form .content-welcome {
+        top: 30%;
+        left: 15%;
+    }
+
+    .cv {
+        width: 200px;
+        height: 200px;
+        left: 25%;
+    }
+
+    .cv-label {
+        left: 0;
+        font-size: 1.2em;
+    }
+
+    .bg-circle {
+        width: 100vh;
+        height: 100vh;
+    }
+    /* Section Contact Cv end */
 
 }
