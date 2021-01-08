@@ -1372,8 +1372,8 @@ li {
     width: 40%;
     text-align: center;
     padding: 50px;
-    border: 7px inset rgb(107, 106, 118);
-    background: #0a1932;
+    border: 4px inset rgb(107, 106, 118);
+    background: #18386dbf;
     animation: work-links .5s linear forwards;
 }
 @keyframes work-links {
@@ -1423,7 +1423,7 @@ li {
     transition: .2s;
     border-radius: 20px;
     font-style: italic;
-    background: #0a1932;
+    background: #18386dbf;
 }
 
 .work-skills::before {
@@ -1458,7 +1458,54 @@ li {
     margin-top: 50px;
 }
 
+.htmlcsslg {
+    position: absolute;
+    bottom: 5%;
+    left: 37%;
+    width: 25%;
+    margin-top: 20px;
+}
 
+.htmlcssjslg {
+    width: 45%;
+    position: absolute;
+    left: 27%;
+}
+
+.wplg {
+    position: absolute;
+    top: 24%;
+    right: 8%;
+    width: 25%;
+}
+
+.jqlg {
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    width: 35%;
+}
+
+.phplg {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    width: 20%;
+}
+
+.sflg {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 20%;
+}
+
+.reactlg {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    width: 25%;
+}
 
 
 

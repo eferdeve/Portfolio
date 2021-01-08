@@ -20,13 +20,13 @@ class Works {
         this.todolist = $('.todolist');
         this.tabac = $('.tabac');
         //Icons
-        this.html = $('.fa-html5');
-        this.css = $('fa-css3');
-        this.js = $('.fa-js-square');
-        this.php = $('.fa-php');
-        this.symfony = $('.fab fa-symfony');
-        this.database = $('.fa-database');
-        this.wordpress = $('.fa-wordpress');
+        this.htmlcss = $('.htmlcsslg');
+        this.htmlcssjs = $('.htmlcssjslg');
+        this.jquery = $('.jqlg');
+        this.wordpress = $('.wplg');
+        this.php = $('.phplg');
+        this.symfony = $('.sflg');
+        this.react = $('.reactlg');
 
         //Events
         this.webagency.click(this.webagencyItem.bind(this));
@@ -97,7 +97,15 @@ class Works {
             );
         this.link.show();
         this.link.attr("href", "http://projetocferres.com/");
-        $('<div class="fab fa-html5"></div>').appendTo(this.skills);
+        //logos
+        this.htmlcss.show();
+        this.htmlcssjs.hide();
+        this.jquery.hide();
+        this.wordpress.hide();
+        this.php.hide();
+        this.symfony.hide();
+        this.react.hide();
+        this
     }
 
     noumeaItem() {
@@ -110,6 +118,14 @@ class Works {
             );
         this.link.show();
         this.link.attr("href", "https://noumea-touring.com/");
+        //logos
+        this.htmlcss.show();
+        this.htmlcssjs.hide();
+        this.jquery.hide();
+        this.wordpress.show();
+        this.php.hide();
+        this.symfony.hide();
+        this.react.hide();
     }
 
     bikemapItem() {
@@ -122,6 +138,14 @@ class Works {
             );
         this.link.show();
         this.link.attr("href", "http://bikemap.projetocferres.com/");
+        //logos
+        this.htmlcss.hide();
+        this.htmlcssjs.show();
+        this.jquery.show();
+        this.wordpress.hide();
+        this.php.hide();
+        this.symfony.hide();
+        this.react.hide();
     }
 
     jeanfItem() {
@@ -134,6 +158,14 @@ class Works {
             );
         this.link.show();
         this.link.attr("href", "http://jeanforteroche.projetocferres.com/");
+        //logos
+        this.htmlcss.hide();
+        this.htmlcssjs.show();
+        this.jquery.show();
+        this.wordpress.hide();
+        this.php.show();
+        this.symfony.hide();
+        this.react.hide();
     }
 
     youjudgeItem() {
@@ -146,6 +178,14 @@ class Works {
             );
         this.link.show();
         this.link.attr("href", "http://youjudge.projetocferres.com/");
+        //logos
+        this.htmlcss.hide();
+        this.htmlcssjs.show();
+        this.jquery.show();
+        this.wordpress.hide();
+        this.php.show();
+        this.symfony.show();
+        this.react.hide();
     }
 
     margotdemirItem() {
@@ -157,6 +197,14 @@ class Works {
         );
         this.link.show();
         this.link.attr("href", "http://margotdemirdjian.com/");
+        //logos
+        this.htmlcss.hide();
+        this.htmlcssjs.show();
+        this.jquery.show();
+        this.wordpress.hide();
+        this.php.show();
+        this.symfony.hide();
+        this.react.hide();
     }
 
     todolistItem() {
@@ -169,6 +217,14 @@ class Works {
             );
         this.link.show();
         this.link.attr("href", "http://todolist.enzoferres.com/");
+        //logos
+        this.htmlcss.hide();
+        this.htmlcssjs.show();
+        this.jquery.show();
+        this.wordpress.hide();
+        this.php.hide();
+        this.symfony.hide();
+        this.react.show();
     }
 
     tabacItem() {
@@ -180,6 +236,14 @@ class Works {
             "Projet personnel de référencement en cours de production."
             );
         this.link.hide();
+        //logos
+        this.htmlcss.show();
+        this.htmlcssjs.hide();
+        this.jquery.hide();
+        this.wordpress.show();
+        this.php.hide();
+        this.symfony.hide();
+        this.react.hide();
     }
 
 }
