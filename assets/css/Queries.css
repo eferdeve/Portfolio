@@ -80,6 +80,10 @@
         border-radius: 20px;
     }
 
+    .global-container .box.activeB {
+        width: 100vw;
+        height: 100vh;
+    }
     .global-container .box:not(.activeB):hover .contentB h2 {
         font-size: 10px;
     }
@@ -94,14 +98,28 @@
         height: auto;
     }
 
-    .annex-blocks {
+    .annexe-blocks {
         width: 100%;
         margin-top: 30px;
         font-size: 14px;
+        justify-content: space-around;
+        flex-direction: column;
     }
 
     .work-links {
+        width: 100%;
         padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .work-skills {
+        width: 100%;
+    }
+
+
+
+    .lg {
+        position: inherit;
     }
     /* Section Travaux end */
 
