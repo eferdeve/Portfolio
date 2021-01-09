@@ -35,6 +35,10 @@
         left: 17%;
     }
 
+    .card-menu-section {
+        overflow: scroll;
+    }
+
     .card-menu.menu-active .card-menu-section-4 {
         transform: translate3d(0px, 240px, 0);
     }
