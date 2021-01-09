@@ -253,3 +253,68 @@
     /* Section Contact Cv end */
 
 }
+
+@media all and (min-width: 481px) and (max-width: 1024px) {
+    /* Navigation strat */
+    .card-menu-section-1 .card-menu-section-heading, .card-menu-section-1 .card-menu-menu-btn:before, .card-menu-section-heading, .card-menu-section-2 .card-menu-section-heading, .card-menu-section-2 .card-menu-menu-btn:before, .card-menu-section-4 .card-menu-section-heading, .card-menu-section-4 .card-menu-menu-btn:before {
+        left: 10%;
+    }
+    /* Navigation end */
+
+    /* Section présentation start */
+    .home {
+        height: 85vh;
+        width: 100%;
+    }
+    /* Section présentation end */
+
+    /* Section Compétences start */
+    .container {
+        width: 100%;
+    }
+
+    .tools-logo {
+        transform: translateY(0px, 600px);
+    }
+    /* Section Compétences end */
+
+    /* Section Travaux start */
+    .global-container .box {
+        width: 205px;
+        height: 205px;
+        border-radius: 50px;
+    }
+
+    .annexe-blocks {
+        width: 100%;
+    }
+
+    .work-links {
+        padding: 30px;
+    }
+    /* Section Travaux end */
+
+    /* Section Contact start */
+    input:not([type="radio"]), select {
+        left: 32%;
+    }
+
+    .form {
+        border: solid 1px grey;
+        width: 100%;
+        left: 0;
+    }
+
+    div.btn {
+        right: 5%;
+    }
+
+    input:not([type="radio"]), select {
+        font-size: 20px;
+    }
+
+    .cv {
+        left: 30%;
+    }
+    /* Section Contact end */
+}
