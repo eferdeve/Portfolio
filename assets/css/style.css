@@ -437,6 +437,7 @@ li {
     opacity: 0;
     animation: headingIn .5s ease forwards;
     animation-delay: 1.2s;
+    font-size: 2em;
 }
 
 @keyframes headingIn {
@@ -454,6 +455,10 @@ li {
     overflow: hidden;
     font-weight: normal;
     font-family: 'Source Code Pro', monospace;
+}
+
+.content .sub-heading h1 {
+    font-size: 1.2em;
 }
 .content .sub-heading span {
     font-size: 1.5em;
@@ -1622,7 +1627,7 @@ li {
     position: absolute;
     bottom: 5%;
     left: 37%;
-    width: 25%;
+    width: 20%;
     margin-top: 20px;
 }
 
